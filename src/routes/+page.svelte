@@ -5,7 +5,7 @@
 </script>
 
 <svelte:head>
-	<title>Home</title>
+	<title>Wenzel Baguette of the Day</title>
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
@@ -18,12 +18,16 @@
 			</picture>
 		</span>
 
-		to your new<br />SvelteKit app
+		baguette<br />of the day
 	</h1>
 
-	<h2>
-		try editing <strong>src/routes/+page.svelte</strong>
+	<h2 class="baguette-text-bg-panel">
+		Tuna Salad Baguette
 	</h2>
+
+	<!-- <h2>
+		try editing <strong>src/routes/+page.svelte</strong>
+	</h2> -->
 
 	<Counter />
 </section>
@@ -56,4 +60,13 @@
 		top: 0;
 		display: block;
 	}
+
+	.baguette-text-bg-panel {
+  		border-radius: 25px;
+  		background-color: #540884;
+  		padding: 20px;
+  		width: 200px;
+  		height: 10px;
+		color: white;
+}
 </style>
