@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Counter from './Counter.svelte';
+	// import Counter from './Counter.svelte';
 	import welcome from '$lib/images/svelte-welcome.webp';
 	import welcomeFallback from '$lib/images/svelte-welcome.png';
 </script>
@@ -25,7 +25,6 @@
 		Tuna Salad Baguette
 	</h2>
 
-	<Counter />
 </section>
 
 <style>
