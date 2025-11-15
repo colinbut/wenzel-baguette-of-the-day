@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Header from './Header.svelte';
+	import Footer from './Footer.svelte';
 	import '../app.css';
 
 	let { children } = $props();
@@ -12,11 +13,7 @@
 		{@render children()}
 	</main>
 
-	<footer>
-		<p>
-			&copy; Copyright. Colin But. 2025
-		</p>
-	</footer>
+	<Footer />
 </div>
 
 <style>
@@ -36,18 +33,5 @@
 		margin: 0 auto;
 		box-sizing: border-box;
 	}
-
-	footer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 12px;
-	}
-
-	@media (min-width: 480px) {
-		footer {
-			padding: 12px 0;
-		}
-	}
+	
 </style>
