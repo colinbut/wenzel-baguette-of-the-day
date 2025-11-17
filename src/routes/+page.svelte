@@ -1,5 +1,6 @@
 <script lang="ts">
 	// import Counter from './Counter.svelte';
+	import Baguette from './Baguette.svelte';
 	import welcome from '$lib/images/svelte-welcome.webp';
 	import welcomeFallback from '$lib/images/svelte-welcome.png';
 </script>
@@ -10,7 +11,7 @@
 </svelte:head>
 
 <section>
-	<h1>
+	<!-- <h1>
 		<span class="welcome">
 			<picture>
 				<source srcset={welcome} type="image/webp" />
@@ -23,7 +24,9 @@
 
 	<h2 class="baguette-text-bg-panel">
 		Tuna Salad Baguette
-	</h2>
+	</h2> -->
+
+	<Baguette />
 
 </section>
 

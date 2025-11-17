@@ -17,7 +17,9 @@
         ["17/11/2025", "Egg & Tomato Baguette"],
     ]);
 
-    let baguetteOfTheDay = map.get(day + "/" + month + "/" + year)
+	console.log(day + "/" + month + "/" + year)
+    let baguetteOfTheDay = map.get(day + "/" + month + "/" + year)?.toUpperCase()
+	console.log(baguetteOfTheDay)
 
 </script>
 
@@ -34,7 +36,7 @@
 	</h1>
 
 	<h2 class="baguette-text-bg-panel">
-		Tuna Salad Baguette
+		{baguetteOfTheDay}
 	</h2>
 </div>
 
@@ -71,8 +73,9 @@
   		border-radius: 25px;
   		background-color: #540884;
   		padding: 20px;
-  		width: 200px;
+  		width: 250px;
   		height: 10px;
 		color: white;
+		text-align: center;
     }
 </style>
