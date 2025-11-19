@@ -1,33 +1,16 @@
 <script lang="ts">
-	// import Counter from './Counter.svelte';
 	import Baguette from './Baguette.svelte';
-	import welcome from '$lib/images/svelte-welcome.webp';
-	import welcomeFallback from '$lib/images/svelte-welcome.png';
+	//import welcome from '$lib/images/svelte-welcome.webp';
+	//import welcomeFallback from '$lib/images/svelte-welcome.png';
 </script>
 
 <svelte:head>
 	<title>Wenzel Baguette of the Day</title>
-	<meta name="description" content="Svelte demo app" />
+	<meta name="description" content="Wenzel's Baguette of the Day" />
 </svelte:head>
 
 <section>
-	<!-- <h1>
-		<span class="welcome">
-			<picture>
-				<source srcset={welcome} type="image/webp" />
-				<img src={welcomeFallback} alt="Welcome" />
-			</picture>
-		</span>
-
-		baguette<br />of the day
-	</h1>
-
-	<h2 class="baguette-text-bg-panel">
-		Tuna Salad Baguette
-	</h2> -->
-
 	<Baguette />
-
 </section>
 
 <style>
@@ -39,7 +22,7 @@
 		flex: 0.6;
 	}
 
-	h1 {
+	/* h1 {
 		width: 100%;
 	}
 
@@ -66,5 +49,5 @@
   		width: 200px;
   		height: 10px;
 		color: white;
-}
+	} */
 </style>
