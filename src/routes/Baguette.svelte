@@ -25,17 +25,19 @@
 
 <div>
     <h1>
-		<span class="welcome">
-			<picture>
-				<source srcset={welcome} type="image/webp" />
-				<img src={welcomeFallback} alt="Welcome" />
-			</picture>
-		</span>
 		<table>
 			<tbody>
 				<tr>
 					<td>
 						<div class="display-bar-decoration"></div>
+					</td>
+					<td>
+						<span class="welcome">
+							<picture>
+								<source srcset={welcome} type="image/webp" />
+								<img src={welcomeFallback} alt="Welcome" />
+							</picture>
+						</span>
 					</td>
 					<td>
 						<div class="display-text">
@@ -68,7 +70,7 @@
 	}
 
 	.welcome img {
-		position: absolute;
+		position: relative;
 		width: 100%;
 		height: 100%;
 		top: 0;
