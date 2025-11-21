@@ -31,8 +31,22 @@
 				<img src={welcomeFallback} alt="Welcome" />
 			</picture>
 		</span>
-
-		baguette<br />of the day
+		<table>
+			<tbody>
+				<tr>
+					<td>
+						<div class="display-bar-decoration"></div>
+					</td>
+					<td>
+						<div class="display-text">
+							BAGUETTE<br />OF THE DAY
+						</div>
+					</td>
+				</tr>
+			</tbody>
+			
+		</table>
+		
 	</h1>
 
 	<h2 class="baguette-text-bg-panel">
@@ -59,6 +73,17 @@
 		height: 100%;
 		top: 0;
 		display: block;
+	}
+
+	.display-bar-decoration {
+		width: 10px;
+		height: 60px;
+		background-color: #540884;
+		/* padding: 2px; */
+	}
+
+	.display-text {
+		text-align: left;
 	}
 
 	.baguette-text-bg-panel {
