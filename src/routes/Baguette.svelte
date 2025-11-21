@@ -9,12 +9,12 @@
     let year = currentDate.getFullYear();
 
     let map = new Map<string, string>([
-        ["12/11/2025", "Chicken Salad Baguette"],
-        ["13/11/2025", "Tuna Salad Baguette"],
-        ["14/11/2025", "Ham Salad Baguette"],
-        ["15/11/2025", "Ham & Cheese Baguette"],
-        ["16/11/2025", "Cheese Salad Baguette"],
-        ["17/11/2025", "Egg & Tomato Baguette"],
+        ["21/11/2025", "Chicken Salad Baguette"],
+        ["22/11/2025", "Tuna Salad Baguette"],
+        ["23/11/2025", "Ham Salad Baguette"],
+        ["24/11/2025", "Ham & Cheese Baguette"],
+        ["25/11/2025", "Cheese Salad Baguette"],
+        ["26/11/2025", "Egg & Tomato Baguette"],
     ]);
 
 	console.log(day + "/" + month + "/" + year)
@@ -62,6 +62,7 @@
 		width: 100%;
 		height: 0;
 		padding: 0 0 calc(100% * 495 / 2048) 0;
+		
 	}
 
 	.welcome img {
@@ -70,6 +71,8 @@
 		height: 100%;
 		top: 0;
 		display: block;
+		border-color: black;
+		border-width: 1px;
 	}
 
 	.display-bar-decoration {
@@ -81,6 +84,7 @@
 
 	.display-text {
 		text-align: left;
+		color: white;
 	}
 
 	.baguette-text-bg-panel {

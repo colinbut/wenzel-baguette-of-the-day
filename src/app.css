@@ -5,9 +5,9 @@
 		Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
 		'Open Sans', 'Helvetica Neue', sans-serif;
 	--font-mono: 'Fira Mono', monospace;
-	--color-bg-0: rgb(202, 216, 228);
-	--color-bg-1: hsl(209, 36%, 86%);
-	--color-bg-2: hsl(224, 44%, 95%);
+	--color-bg-0: rgb(233, 133, 11);
+	--color-bg-1: hsl(32, 91%, 47%);
+	--color-bg-2: hsl(31, 94%, 47%);
 	--color-theme-1: #ff3e00;
 	--color-theme-2: #4075a6;
 	--color-text: rgba(0, 0, 0, 0.7);
@@ -24,7 +24,7 @@ body {
 	background-color: var(--color-bg-1);
 	background-size: 100vw 100vh;
 	background-image:
-		radial-gradient(50% 50% at 50% 50%, rgba(232, 116, 7, 0.782) 0%, rgba(255, 255, 255, 0) 100%),
+		radial-gradient(50% 50% at 50% 50%, rgba(170, 163, 156, 0.782) 0%, rgba(255, 255, 255, 0) 100%),
 		linear-gradient(180deg, var(--color-bg-0) 0%, var(--color-bg-1) 15%, var(--color-bg-2) 50%);
 }
 
