@@ -32,25 +32,20 @@
 						<div class="display-bar-decoration"></div>
 					</td>
 					<td>
-						<span class="welcome">
-							<picture>
-								<source srcset={welcome} type="image/webp" />
-								<img src={welcomeFallback} alt="Welcome" />
-							</picture>
-						</span>
-					</td>
-					<td>
 						<div class="display-text">
 							BAGUETTE<br />OF THE DAY
 						</div>
 					</td>
 				</tr>
 			</tbody>
-			
 		</table>
-		
 	</h1>
-
+	<span class="welcome">
+		<picture>
+			<source srcset={welcome} type="image/webp" />
+			<img src={welcomeFallback} alt="Welcome" />
+		</picture>
+	</span>
 	<h2 class="baguette-text-bg-panel">
 		{baguetteOfTheDay}
 	</h2>
@@ -70,7 +65,7 @@
 	}
 
 	.welcome img {
-		position: relative;
+		position: absolute;
 		width: 100%;
 		height: 100%;
 		top: 0;
