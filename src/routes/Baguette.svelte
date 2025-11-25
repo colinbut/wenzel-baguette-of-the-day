@@ -1,6 +1,7 @@
 <script lang="ts">
     import welcome from '$lib/images/svelte-welcome.webp';
 	import welcomeFallback from '$lib/images/svelte-welcome.png';
+	import tunaSaladBaguette from '$lib/images/tunasalad.jpeg';
 
     let currentDate : Date = new Date();
 
@@ -42,7 +43,7 @@
 	</h1>
 	<span class="welcome">
 		<picture>
-			<source srcset={welcome} type="image/webp" />
+			<source srcset={tunaSaladBaguette} type="image/webp" />
 			<img src={welcomeFallback} alt="Welcome" />
 		</picture>
 	</span>
