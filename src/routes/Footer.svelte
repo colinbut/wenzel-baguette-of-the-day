@@ -13,6 +13,10 @@
 		padding: 12px;
 	}
 
+	footer p {
+		color: white;
+	}
+
     @media (min-width: 480px) {
 		footer {
 			padding: 12px 0;
