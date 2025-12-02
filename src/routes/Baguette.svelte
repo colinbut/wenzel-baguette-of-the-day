@@ -3,6 +3,14 @@
 	import welcomeFallback from '$lib/images/svelte-welcome.png';
 	import tunaSaladBaguette from '$lib/images/tunasalad.jpeg';
 
+	const baguettes: string[] = [];
+	baguettes.push("Chicken Salad Baguette");
+	baguettes.push("Tuna Salad Baguette");
+	baguettes.push("Ham Salad Baguette");
+	baguettes.push("Ham & Cheese Baguette");
+	baguettes.push("Cheese Salad Baguette");
+	baguettes.push("Egg & Tomato Baguette");
+
     let currentDate : Date = new Date();
 
     let day = currentDate.getDate();
