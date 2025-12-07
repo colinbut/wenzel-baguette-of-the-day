@@ -1,12 +1,8 @@
 # Wenzel's Baguette of the Day
 
-## Author
-
-Colin But.
-
 ## Development.
 
-If you're seeing this, you've probably already done this step. Congrats!
+Creating a new project:
 
 ```sh
 # create a new project in the current directory
@@ -29,7 +25,7 @@ npm run dev -- --open
 
 ## Building
 
-To create a production version of your app:
+building the app for production:
 
 ```sh
 npm run build
@@ -39,3 +35,14 @@ You can preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
 
+## Deployment
+
+To deploy run the following command:
+
+```sh
+npm run deploy
+```
+
+## Author
+
+Colin But.
