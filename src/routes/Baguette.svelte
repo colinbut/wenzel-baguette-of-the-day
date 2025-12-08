@@ -11,24 +11,32 @@
 	baguettes.push("Cheese Salad Baguette");
 	baguettes.push("Egg & Tomato Baguette");
 
-    let currentDate : Date = new Date();
+    let map = new Map<string, string>([]);
 
+	const endDate = new Date("2026-01-31");
+
+	let startingDate = new Date("2025-12-07");
+	
+	while (startingDate < endDate) {
+		//console.log("Starting Date is:" + startingDate + " and EndDate is: " + endDate);
+		for (var baguette of baguettes) {
+			let tomorrowDate = new Date(startingDate);
+			tomorrowDate.setDate(startingDate.getDate()+1);
+			map.set(tomorrowDate.getDate()+"/"+(tomorrowDate.getMonth()+1)+"/"+tomorrowDate.getFullYear(), baguette);
+			startingDate = tomorrowDate;
+			//console.log("[Tomorrow date is]: " + tomorrowDate + "[new start date is]: " + startingDate + " and baguette is: " + baguette);
+		}
+	}
+	console.log([...map.entries()]);
+	
+	let currentDate : Date = new Date();
     let day = currentDate.getDate();
     let month = currentDate.getMonth() + 1;
     let year = currentDate.getFullYear();
-
-    let map = new Map<string, string>([
-        ["21/11/2025", "Chicken Salad Baguette"],
-        ["22/11/2025", "Tuna Salad Baguette"],
-        ["23/11/2025", "Ham Salad Baguette"],
-        ["24/11/2025", "Ham & Cheese Baguette"],
-        ["25/11/2025", "Cheese Salad Baguette"],
-        ["26/11/2025", "Egg & Tomato Baguette"],
-    ]);
-
-	console.log(day + "/" + month + "/" + year)
+	
+	//console.log(day + "/" + month + "/" + year)
     let baguetteOfTheDay = map.get(day + "/" + month + "/" + year)?.toUpperCase()
-	console.log(baguetteOfTheDay)
+	console.log("Baguette of the Day is: " + baguetteOfTheDay)
 
 </script>
 
