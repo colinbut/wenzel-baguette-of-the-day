@@ -11,7 +11,8 @@
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"format": "prettier --write .",
-		"lint": "prettier --check . && eslint ."
+		"lint": "prettier --check . && eslint .",
+		"deploy": "npm run build && cp 404.html ./build/ && aws s3 sync ./build/ s3://wenzels-baguette-of-the-day/ --delete"
 	},
 	"devDependencies": {
 		"@eslint/compat": "^1.4.0",
