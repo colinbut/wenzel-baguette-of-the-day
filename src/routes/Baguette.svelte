@@ -2,6 +2,9 @@
     import welcome from '$lib/images/svelte-welcome.webp';
 	import welcomeFallback from '$lib/images/svelte-welcome.png';
 	import tunaSaladBaguette from '$lib/images/tunasalad.jpeg';
+	import chickenSaladBaguette from '$lib/images/chicken-salad.jpeg'
+	import cheeseSaladBaguette from '$lib/images/cheese-salad.jpeg'
+	import hamSaladBaguette from '$lib/images/ham-salad-baguette.jpeg'
 
 	const baguettes: string[] = [];
 	baguettes.push("Chicken Salad Baguette");
@@ -59,8 +62,21 @@
 	</h1>
 	<span class="welcome">
 		<picture>
-			<source srcset={tunaSaladBaguette} type="image/webp" />
-			<img src={welcomeFallback} alt="Welcome" />
+			{#if baguetteOfTheDay == "TUNA SALAD BAGUETTE"}
+				<source srcset={tunaSaladBaguette} type="image/webp" />
+				<img src={welcomeFallback} alt="Welcome" />
+			{:else if baguetteOfTheDay == "CHICKEN SALAD BAGUETTE"}
+				<source srcset={chickenSaladBaguette} type="image/webp" />
+				<img src={welcomeFallback} alt="Welcome" />
+			{:else if baguetteOfTheDay == "HAM SALAD BAGUETTE"}
+				<source srcset={hamSaladBaguette} type="image/webp" />
+				<img src={welcomeFallback} alt="Welcome" />
+			{:else if baguetteOfTheDay == "CHEESE SALAD BAGUETTE"}
+				<source srcset={cheeseSaladBaguette} type="image/webp" />
+				<img src={welcomeFallback} alt="Welcome" />
+			{:else}
+				<img src={welcomeFallback} alt="Welcome" />
+			{/if}
 		</picture>
 	</span>
 	<h2 class="baguette-text-bg-panel">
