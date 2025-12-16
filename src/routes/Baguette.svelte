@@ -1,10 +1,13 @@
 <script lang="ts">
     import welcome from '$lib/images/svelte-welcome.webp';
 	import welcomeFallback from '$lib/images/svelte-welcome.png';
+	
 	import tunaSaladBaguette from '$lib/images/tunasalad.jpeg';
 	import chickenSaladBaguette from '$lib/images/chicken-salad.jpeg'
 	import cheeseSaladBaguette from '$lib/images/cheese-salad.jpeg'
 	import hamSaladBaguette from '$lib/images/ham-salad-baguette.jpeg'
+	import hamCheeseSaladBaguette from '$lib/images/ham-and-cheese.jpeg'
+	import eggTomatoSaladBaguette from '$lib/images/egg-and-tomato.jpeg'
 
 	const baguettes: string[] = [];
 	baguettes.push("Chicken Salad Baguette");
@@ -73,6 +76,12 @@
 				<img src={welcomeFallback} alt="Welcome" />
 			{:else if baguetteOfTheDay == "CHEESE SALAD BAGUETTE"}
 				<source srcset={cheeseSaladBaguette} type="image/webp" />
+				<img src={welcomeFallback} alt="Welcome" />
+			{:else if baguetteOfTheDay == "HAM AND CHEESE BAGUETTE"}
+				<source srcset={hamCheeseSaladBaguette} type="image/webp" />
+				<img src={welcomeFallback} alt="Welcome" />
+			{:else if baguetteOfTheDay == "EGG AND TOMATO BAGUETTE"}
+				<source srcset={eggTomatoSaladBaguette} type="image/webp" />
 				<img src={welcomeFallback} alt="Welcome" />
 			{:else}
 				<img src={welcomeFallback} alt="Welcome" />
