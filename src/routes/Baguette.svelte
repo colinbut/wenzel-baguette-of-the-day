@@ -77,7 +77,7 @@
 			{:else if baguetteOfTheDay == "CHEESE SALAD BAGUETTE"}
 				<source srcset={cheeseSaladBaguette} type="image/webp" />
 				<img src={welcomeFallback} alt="Welcome" />
-			{:else if baguetteOfTheDay == "HAM AND CHEESE BAGUETTE"}
+			{:else if baguetteOfTheDay == "HAM & CHEESE BAGUETTE"}
 				<source srcset={hamCheeseSaladBaguette} type="image/webp" />
 				<img src={welcomeFallback} alt="Welcome" />
 			{:else if baguetteOfTheDay == "EGG AND TOMATO BAGUETTE"}
