@@ -30,7 +30,7 @@
 			tomorrowDate.setDate(startingDate.getDate()+1);
 			map.set(tomorrowDate.getDate()+"/"+(tomorrowDate.getMonth()+1)+"/"+tomorrowDate.getFullYear(), baguette);
 			startingDate = tomorrowDate;
-			//console.log("[Tomorrow date is]: " + tomorrowDate + "[new start date is]: " + startingDate + " and baguette is: " + baguette);
+			
 		}
 	}
 	console.log([...map.entries()]);
