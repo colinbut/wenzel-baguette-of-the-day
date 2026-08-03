@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "wenzel-baguette-of-the-day"
+  description: web app show wenzel baguette of the day
+  tags:
+    - java
+spec:
+  type: website
+  owner: user:guest
+  lifecycle: production
